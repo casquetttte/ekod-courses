@@ -44,7 +44,7 @@ alert(freeze_corleone)
  - Concaténation : +
 
 
-Par défaut, l'ordinateur ne fait ren du résultat d'un opération.
+Par défaut, l'ordinateur ne fait ren du résultat d'un opération. <br/>
 Il faut lui indiquer quoi en faire :
  - l'afficher : alert(5 + 5)
  - le sauvegarder : resultat = 5 + 5
