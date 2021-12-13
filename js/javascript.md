@@ -59,8 +59,8 @@ alert(10 / 2)
 ```
 
 ### Exercice 1
-Demander la note de maths de l'élève
-Demander la note de français de l'élève
+Demander la note de maths de l'élève <br/>
+Demander la note de français de l'élève <br/>
 Demander la note d'histoire de l'élève
 
 Afficher la moyenne de l'élève
