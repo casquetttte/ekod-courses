@@ -30,3 +30,21 @@ Exexmple : pour cuire 750g de boeuf bleu, il faut 15 minutes) <br/>
 2/ Demander à l'utilisateur de saisir la cuisson souhaitée (bleu, à point, bien cuit) <br/>
 3/ Afficher le temps de cuisson
 
+```js
+poids = parseInt(prompt("Saissiez le poids de votre viande"));
+cuisson = prompt("Saisissez la cuisson souhaitée");
+
+bleu = 0.02
+point = 0.034
+bien_cuit = 0.05
+
+if(cuisson == "bleu"){
+    alert(poids * bleu);
+} else if(cuisson == "a point"){
+    alert(poids * point);
+} else if(cuisson == "bien cuit"){
+    alert(poids * bien_cuit);
+} else {
+  alert("Ecrit mieux zebi")
+}
+```
