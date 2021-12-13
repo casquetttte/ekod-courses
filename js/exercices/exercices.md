@@ -15,3 +15,17 @@ alert(resultat / 3)
 ```
 
 ### Exercice 2
+Ecrire un algorithme pour afficher le temps de cuisson d'une viande en fonction du poids et de la cuisson souhaitée<br/>
+
+Règles à appliquer : <br/>
+Pour cuire 500g de boeuf, il faut :
+ - bleu : 10 minutes
+ - à point : 17 minutes
+ - bien cuit : 25 minutes
+Le temps de cuisson est proportionnel au poids <br/>
+(ex : pour cuire 750g de boeuf bleu, il faut 15 minutes) <br/>
+
+1/ Demander à l'utilisateur de saisir le poids de la viande à cuire en grammes
+2/ Demander à l'utilisateur de saisir la cuisson souhaitée (bleu, à point, bien cuit)
+3/ Afficher le temps de cuisson
+
