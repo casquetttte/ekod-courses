@@ -83,5 +83,5 @@ alert(resultat / 3)
 ### Conditions
 ```js
 if(condition){
-    // code à exectuer sur condition 
+    // code à exectuer si condition est vraie
 }
