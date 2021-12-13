@@ -71,3 +71,10 @@ histoire = parseInt(prompt("Note d'histoire"))
 resultat = maths + francais + histoire
 alert(resultat / 3)
 ```
+
+### Opérateurs de comparaison :
+ - `>` supérieur à
+ - `<` inférieur à
+ - `==` égal à
+ - `!=` différent de
+ - 
