@@ -25,7 +25,7 @@ Pour cuire 500g de boeuf, il faut :
 Le temps de cuisson est proportionnel au poids <br/>
 (ex : pour cuire 750g de boeuf bleu, il faut 15 minutes) <br/>
 
-1/ Demander à l'utilisateur de saisir le poids de la viande à cuire en grammes
-2/ Demander à l'utilisateur de saisir la cuisson souhaitée (bleu, à point, bien cuit)
+1/ Demander à l'utilisateur de saisir le poids de la viande à cuire en grammes <br/>
+2/ Demander à l'utilisateur de saisir la cuisson souhaitée (bleu, à point, bien cuit) <br/>
 3/ Afficher le temps de cuisson
 
