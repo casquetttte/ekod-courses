@@ -85,3 +85,14 @@ alert(resultat / 3)
 if(condition){
     // code à exectuer si condition est vraie
 }
+```
+```js
+heure_arrivee = parseFloat(prompt("Heure d'arrivée?"));
+if(heure_arrivee <= 9){
+    alert("vous êtes à l'heure");
+} else if(heure_arrivee <= 10){
+    alert("vous êtes en retard");
+} else {
+    alert("vous êtes très en retard");
+}
+```
