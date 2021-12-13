@@ -77,4 +77,5 @@ alert(resultat / 3)
  - `<` inférieur à
  - `==` égal à
  - `!=` différent de
- - 
+ - `>=` supérieur ou égal à
+ - `<=` inférieur ou égal à
