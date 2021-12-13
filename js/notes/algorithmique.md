@@ -10,7 +10,7 @@ Faire des opérations mathématique
  - Multiplication
  - Puissance
  - Concaténation (coller deux morceaux)
-```
+```js
 5+5 = 10
 5 . 5 = 55
 ```
@@ -28,21 +28,21 @@ On peut mettre plusieurs types d'éléments dedans
  - Booleans 
 
 Exemples de variables :
-```
+```js
     age = 22
     present = vrai
     prenom = "william"
     prenom = lire
 ```
-```
+```js
     distance = lire
     temps = lire
 ```
+```js
+    afficher : distance / temps //affiche le résultat du calcul
+    vitesse = distance / temps //stocke le résultat du calcul
 ```
-    afficher : distance / temps (affiche le résultat du calcul)
-    vitesse = distance / temps (stocke le résultat du calcul)
-```
-```
+```js
     distance = prompt()
     temps = prompt()
     alert(distance / temps)
