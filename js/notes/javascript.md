@@ -5,16 +5,16 @@
 
 
 ### Afficher
-```
+```js
 alert("Hello world!")
 ```
 ### Demander
-```
+```js
 prenom = prompt()
 prenom = prompt("Quel est votre prénom ?")
 alert(prenom)
 ```
-```
+```js
 nombre1 = parseInt(prompt("Nombre 1"))
 nombre2 = parseInt(prompt("Nombre 2"))
 alert(nombre1 + nombre2)
@@ -24,7 +24,7 @@ mon_nombre = parseInt(prompt("Choisissez un nombre"))
 
 
 ### Affectations
-```
+```js
 freeze_corleone=667
 alert(freeze_corleone)
 ```
@@ -50,7 +50,7 @@ Il faut lui indiquer quoi en faire :
  - le sauvegarder : resultat = 5 + 5
 
 ### Variables dans des opérations
-```
+```js
 distance = 10
 temps = 2
 alert(distance / temps)
@@ -64,7 +64,7 @@ Demander la note de français de l'élève <br/>
 Demander la note d'histoire de l'élève
 
 Afficher la moyenne de l'élève
-```
+```js
 maths = parseInt(prompt("Note de maths"))
 francais = parseInt(prompt("Note de français"))
 histoire = parseInt(prompt("Note d'histoire"))
@@ -79,3 +79,9 @@ alert(resultat / 3)
  - `!=` différent de
  - `>=` supérieur ou égal à
  - `<=` inférieur ou égal à
+
+### Conditions
+```js
+if(condition){
+    // code à exectuer sur condition 
+}
