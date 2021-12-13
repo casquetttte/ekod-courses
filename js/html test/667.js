@@ -51,7 +51,7 @@ if(heure_arrivee <= 9){
 // 6th TEST
 mdp = prompt("Quel est le password ?")
 vrai_mdp = "ekip"
-if(mdp == vrai_mdp){
+if(mdp == vrai_mdp){ // Comparer deux textes ensembles
     alert("GANG");
 } else {
     alert("Pue la merde!");
