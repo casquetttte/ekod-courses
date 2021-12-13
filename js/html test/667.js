@@ -18,11 +18,20 @@ if(est_en_retard){
 }
 */
 
-// 3rd TEST
+/* 3rd TEST
 heure_arrivee = parseInt(prompt("Heure d'arrivée?"));
 if(heure_arrivee > 9){
     alert("vous êtes en retard");
 }
 if(heure_arrivee <= 9){
     alert("vous êtes à l'heure");
+}
+*/
+
+// 4th TEST
+heure_arrivee = parseInt(prompt("Heure d'arrivée?"));
+if(heure_arrivee > 9){
+    alert("vous êtes en retard");
+} else {
+    alert("Vous êtes à l'heure");
 }
