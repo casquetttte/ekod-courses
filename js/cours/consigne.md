@@ -63,7 +63,7 @@ Les élèves sont en 1ère L, chaque matière n'a pas le même coefficient, on s
 
 Fonctionnement attendu :
 
-Reprendre le fonctionnement actuel du programme mais modifier la formule permettant de calculer la moyenne afin de prendreen compte le coefficient de chaque matière.
+Reprendre le fonctionnement actuel du programme mais modifier la formule permettant de calculer la moyenne afin de prendre en compte le coefficient de chaque matière.
 Les coefficients des matières sont les suivants:
  - Math: 2
  - Français: 6
