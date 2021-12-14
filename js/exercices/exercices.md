@@ -63,8 +63,8 @@ cuisson_souhaitee = prompt("Quel cuisson souhaitez-vous ?");
 if(cuisson_souhaitee == "bleu"){
     alert(poids * 0.02);
 } else if(cuisson_souhaitee == "à point"){
-		alert(poids * 0.034);
+    alert(poids * 0.034);
 } else if(cuisson_souhaitee == "bien cuit"){
-		alert(poids * 0.05);
+    alert(poids * 0.05);
 }
 ```
