@@ -194,5 +194,37 @@ if(moyenne < 5){
 }
 
 // #3 Progression
+maths = parseInt(prompt("Note de maths"))
+francais = parseInt(prompt("Note de français"))
+histoire = parseInt(prompt("Note d'histoire"))
+sport = parseInt(prompt("Note de sport"))
+moyenne_precedente = parseInt(prompt("Moyenne précédente"))
+eleve = (prompt("Nom de l'élève"))
+
+moyenne = (maths + francais + histoire + sport) / 4
+
+if(moyenne_precedente < moyenne){
+    if(moyenne < 5){
+        alert(eleve +" peut mieux faire mais a progressé");
+    } else if(moyenne < 10){
+        alert(eleve +" est en bonne voie et a progressé");
+    } else if(moyenne < 15){
+        alert("Bien "+eleve+" a progressé");
+    } else {
+        alert("Très bien "+eleve+" a progressé");
+    }
+} else {
+    if(moyenne < 5){
+        alert(eleve +" peut mieux faire et est capable de mieux");
+    } else if(moyenne < 10){
+        alert(eleve +" est en bonne voie et est capable de mieux");
+    } else if(moyenne < 15){
+        alert("Bien "+eleve+" mais est capable de mieux");
+    } else {
+        alert("Très bien "+eleve+" mais est capable de mieux");
+    }
+}
+
+// #4 Coefficient
 
 ```
