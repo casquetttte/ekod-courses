@@ -311,5 +311,10 @@ for(compteur=0;compteur<10;compteur++){
 }
 
 // #5 Demander un nombre à l'utilisateur (prompt), en affichant la table de multiplication
-
+compteur = 0
+nombre = parseInt(prompt("table de ?"))
+for(compteur=0;compteur<11;compteur++){
+    console.log( compteur +" x "+nombre +" = "+compteur* nombre)
+    compteur++
+}
  ```
