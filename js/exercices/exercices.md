@@ -13,6 +13,13 @@ histoire = parseInt(prompt("Note d'histoire"))
 resultat = maths + francais + histoire
 alert(resultat / 3)
 ```
+Correction
+```js
+maths = parseInt(prompt("Note de maths"))
+francais = parseInt(prompt("Note de français"))
+histoire = parseInt(prompt("Note d'histoire"))
+alert((maths + francais + histoire) / 3)
+```
 
 ### Exercice 2
 Ecrire un algorithme pour afficher le temps de cuisson d'une viande en fonction du poids et de la cuisson souhaitée<br/>
@@ -47,4 +54,8 @@ if(cuisson == "bleu"){
 } else {
   alert("Ecrit mieux zebi")
 }
+```
+Correction
+```js
+poids = 
 ```
