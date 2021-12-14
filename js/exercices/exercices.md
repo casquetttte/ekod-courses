@@ -175,5 +175,24 @@ if(moyenne < 5){
 }
 
 // #2 Ajout d'une fonction de personnalisation
+maths = parseInt(prompt("Note de maths"))
+francais = parseInt(prompt("Note de français"))
+histoire = parseInt(prompt("Note d'histoire"))
+sport = parseInt(prompt("Note de sport"))
+eleve = (prompt("Nom de l'élève"))
+
+moyenne = (maths + francais + histoire + sport) / 4
+
+if(moyenne < 5){
+    alert(eleve +" peut mieux faire");
+} else if(moyenne < 10){
+    alert(eleve +" est en bonne voie");
+} else if(moyenne < 15){
+    alert("Bien "+eleve);
+} else {
+    alert("Très bien "+eleve);
+}
+
+// #3 Progression
 
 ```
