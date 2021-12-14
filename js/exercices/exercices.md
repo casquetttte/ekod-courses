@@ -99,11 +99,12 @@ if(cuisson_souhaitee == "bleu"){
 ```
 
 ### Exercice 3
+### Exercice 3
 On a besoin d'un outil pour simplifier la vie d'un professeur principal d'une classe de première pour faire les appréciations du bulletin de notes du trimestre, 
 créer un programme qui génèrera (et affichera) l'appréciation en fonction des notes du trimestre
 
 Les fonctionnalités sont découpés en quatre parties à la difficulté progressive.
-Finissez un lot avant de passer au suivant.
+Finissez un lot avant de passer au suivant
 
 #### 1/ Généréateur de commentaires simples
 Dans un premier temps, on souhaite simplement choisir un des quatre messages prédéfinis en fonction de la moyenne générale obtenue à partir des notes de Math, Français, Histoire et Sport 
@@ -142,7 +143,7 @@ Fonctionnement attendu :
 Après avoir demandé les notes de l'élève, demander la moyenne du trimestre précédent
 À la fin du programme, afficher "à progressé" si la moyenne du trimestre précédent est inférieure afficher "est capable de mieux" si la moyenne du trimestre précédent est supérieure
 
-Bonus : ajouter (concatener les deux messages en un seul pour les afficher en ue fois)
+Bonus : ajouter (concatener les deux messages en un seul pour les afficher en une fois)
 
 #### 4/ Coefficient
 Les élèves sont en 1ère L, chaque matière n'a pas le même coefficient, on souhaite prendre ceci en compte dans notre programme,
