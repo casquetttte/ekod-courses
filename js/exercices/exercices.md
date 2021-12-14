@@ -282,5 +282,13 @@ Exemple : si l'utilisateur choisi 8 : <br/>
  10 x 8 = 80 <br/>
  
  ```js
- 
+ // #1 Afficher 10 fois le chiffre 3
+ compteur = 0
+while (compteur<10){
+    console.log("3");
+    compteur++
+}
+
+// #2 Compter de 0 à 9 dans la console
+
  ```
