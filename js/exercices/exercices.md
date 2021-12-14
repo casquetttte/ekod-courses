@@ -265,7 +265,7 @@ Avec des boucles "while" ou "for".
 2/ Compter de 0 à 9 dans la console <br/>
 3/ Afficher la table de 3 dans la console (de 0 x 3 à 9 x 3) <br/>
 4/ Afficher la table de 7 dans la console (de 0 x 7 à 9 x 7) <br/>
-5/ Demander un nombre à l'utilisateur (prompt), en affichant la table de multiplication. <br/>
+5/ Demander un nombre à l'utilisateur (prompt), en affichant la table de multiplication <br/>
 
 Pour ceux qui vont plus vite, afficher "proprementé les tables pour l'ex 5. <br/>
 Exemple : si l'utilisateur choisi 8 : <br/>
@@ -304,6 +304,12 @@ for(compteur=0;compteur<10;compteur++){
 }
 
 // #4 Afficher la table de 7 dans la console (de 0 x 7 à 9 x 7)
+compteur = 0
+for(compteur=0;compteur<10;compteur++){
+  console.log(compteur + " x 7 = " + compteur*7)
+  compteur+1
+}
 
+// #5 Demander un nombre à l'utilisateur (prompt), en affichant la table de multiplication
 
  ```
