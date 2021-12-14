@@ -330,7 +330,7 @@ Mais ne l'affiche pas à l'utilisateur.
  - C'est moins
  - Bravo la réponse était ...
 
-3/le programme repete la question jusqu'à ce que le joueur trouve le bon nombre.
+3/ Le programme repete la question jusqu'à ce que le joueur trouve le bon nombre.
 
 4/ Demander à l'utilisateur si il souhaite rejouer (sans quitter le programme).
 
@@ -340,3 +340,30 @@ Lorsqu'il dépasse 10 tentative le jeu se termine et indique :
  - Vous avez perdu
 
 Puis demande à l'utilisateur si il souhaite rejouer.
+
+```js
+// #1
+nombre_aleatoire = Math.floor(Math.random()*101)
+console.log(nombre_aleatoire)
+
+// #2 
+nombre_aleatoire = Math.floor(Math.random()*101)
+console.log(nombre_aleatoire)
+nombre_joueur = parseInt(prompt("Choisissez un nombre entre 0 et 100"))
+
+if(nombre_joueur<nombre_aleatoire){
+    alert("C'est plus")
+} else if(nombre_joueur>nombre_aleatoire) {
+    alert("C'est moins")
+} else {
+    alert("Bravo la réponse était")
+}
+
+// #3
+
+// #4
+
+// #5
+
+
+```
