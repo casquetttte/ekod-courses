@@ -70,7 +70,7 @@ if(cuisson_souhaitee == "bleu"){
 ```
 ### Exercice 2 (suite)
 4/ Demander à l'utilisateur de saisir le poids de la viande à cuire en grammes <br/>
-5/ si l'utilisateur indique une mauvaise cuisson / une mauvaise viande, afficher un message d'erreur 
+5/ Si l'utilisateur indique une mauvaise cuisson / une mauvaise viande, afficher un message d'erreur 
 
 ```js
 
