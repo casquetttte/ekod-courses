@@ -22,3 +22,15 @@ while(compteur < 5){
     // compteur *= 2; // compteur = compteur * 2;
 }
 ```
+
+### Boucle "for"
+```js
+debugger;
+for(compteur = 0; compteur < 5; compteur = compteur + 1){
+    alert("sheeeeeeeeeeeeeesh")
+}
+
+for(i=0;i<5;i++){
+    alert("j'aime bien")
+}
+```
