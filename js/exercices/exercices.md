@@ -257,3 +257,5 @@ if(moyenne_precedente < moyenne){
     }
 }
 ```
+
+### Exercice 4
