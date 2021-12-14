@@ -360,10 +360,28 @@ if(nombre_joueur<nombre_aleatoire){
 }
 
 // #3
+nombre_aleatoire = Math.floor(Math.random()*101)
+console.log(nombre_aleatoire)
+nombre_joueur = -1
+
+while(nombre_aleatoire!=nombre_joueur){
+    nombre_joueur = parseInt(prompt("Choisissez un nombre entre 0 et 100"))
+    if(nombre_joueur<nombre_aleatoire){
+        alert("C'est plus")
+    } else if(nombre_joueur>nombre_aleatoire) {
+        alert("C'est moins")
+    } else {
+        alert("Bravo la réponse était "+nombre_aleatoire)
+    }
+}
 
 // #4
 
 // #5
 
+
+```
+Correction
+```js
 
 ```
