@@ -99,11 +99,11 @@ if(cuisson_souhaitee == "bleu"){
 ```
 
 ### Exercice 3
-On a besoin d'un outil simplifier la vie d'un professeur principal d'une classe de première pour faire les appreciations du bulletin de notes du trimestre, 
-créer un programme qui génèrera (et affichera) l'appreciation en fonction des notes du trimestre
+On a besoin d'un outil pour simplifier la vie d'un professeur principal d'une classe de première pour faire les appréciations du bulletin de notes du trimestre, 
+créer un programme qui génèrera (et affichera) l'appréciation en fonction des notes du trimestre
 
-Les fonctionnalités sont découper en quatres parties à la difficulté progressive.
-Finissez un lot avant de passer au suivant
+Les fonctionnalités sont découpés en quatre parties à la difficulté progressive.
+Finissez un lot avant de passer au suivant.
 
 #### 1/ Généréateur de commentaires simples
 Dans un premier temps, on souhaite simplement choisir un des quatre messages prédéfinis en fonction de la moyenne générale obtenue à partir des notes de Math, Français, Histoire et Sport 
