@@ -259,3 +259,28 @@ if(moyenne_precedente < moyenne){
 ```
 
 ### Exercice 4
+Avec des boucles "while" ou "for".
+
+1/ Afficher 10 fois le chiffre 3
+2/ Compter de 0 à 9 dans la console
+3/ Afficher la table de 3 dans la console (de 0 x 3 à 9 x 3)
+4/ Afficher la table de 7 dans la console (de 0 x 7 à 9 x 7)
+5/ Demander un nombre à l'utilisateur (prompt), en affichant la table de multiplication.
+
+Pour ceux qui vont plus vite, afficher "proprementé les tables pour l'ex 5.
+Exemple : si l'utilisateur choisi 8 :
+ 0 x 8 = 0
+ 1 x 8 = 8
+ 2 x 8 = 16
+ 3 x 8 = 24
+ 4 x 8 = 32
+ 5 x 8 = 40
+ 6 x 8 = 48
+ 7 x 8 = 56
+ 8 x 8 = 64
+ 9 x 8 = 72
+ 10 x 8 = 80
+ 
+ ```js
+ 
+ ```
