@@ -156,5 +156,24 @@ Les coefficients des matières sont les suivants:
  - Sport: 1
 
 ```js
+// #1 Généréateur de commentaires simples
+maths = parseInt(prompt("Note de maths"))
+francais = parseInt(prompt("Note de français"))
+histoire = parseInt(prompt("Note d'histoire"))
+sport = parseInt(prompt("Note de sport"))
+
+moyenne = (maths + francais + histoire + sport) / 4
+
+if(moyenne < 5){
+    alert("Peut mieux faire");
+} else if(moyenne < 10){
+    alert("En bonne voie");
+} else if(moyenne < 15){
+    alert("Bien");
+} else {
+    alert("Très bien");
+}
+
+// #2 Ajout d'une fonction de personnalisation
 
 ```
