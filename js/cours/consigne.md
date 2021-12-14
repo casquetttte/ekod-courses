@@ -4,7 +4,7 @@ créer un programme qui génèrera (et affichera) l'appreciation en fonction des
 Les fonctionnalités sont découper en quatres parties à la difficulté progressive.
 Finissez un lot avant de passer au suivant
 
-# 1/ généréateur de commentaires simples
+# 1/ Généréateur de commentaires simples
 
 Dans un premier temps, on souhaite simplement choisir un des quatre messages prédéfinis en fonction de la moyenne générale obtenue à partir des notes de Math, Français, Histoire et Sport 
 
@@ -25,7 +25,7 @@ Sinon, afficher "Très bien"
 
 
 
-# 2/ ajout d'une fonction de personnalisation
+# 2/ Ajout d'une fonction de personnalisation
 
 Afin de personnaliser un peu les commentaires, on souhaite ajouter le nom de l'élève dans le message
 
@@ -43,7 +43,7 @@ Intégrer (concatener) le nom dans les commentaires en remplçant les messages i
 "Très bien NOM_ELEVE"
 ```
 
-# 3/ progression
+# 3/ Progression
 
 Pour nuancer un peu plus les commentaire, on souhaite ajouter une mention sur la progression éventuelle de l'élève
 
@@ -56,7 +56,7 @@ Après avoir demandé les notes de l'élève, demander la moyenne du trimestre p
 
 Bonus : ajouter (concatener les deux messages en un seul pour les afficher en ue fois)
 
-# 4/ coefficient
+# 4/ Coefficient
 
 Les élèves sont en 1ère L, chaque matière n'a pas le même coefficient, on souhaite prendre ceci en compte dans notre programme,
 
