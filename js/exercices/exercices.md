@@ -69,6 +69,12 @@ if(cuisson_souhaitee == "bleu"){
 }
 ```
 ### Exercice 2 (suite)
+
+Pour cuire 400g de porc, il faut : <br/>
+ - bleu : 15 minutes
+ - à point : 25 minutes
+ - bien cuit : 40 minutes
+
 4/ Demander à l'utilisateur de saisir le poids de la viande à cuire en grammes <br/>
 5/ Si l'utilisateur indique une mauvaise cuisson / une mauvaise viande, afficher un message d'erreur 
 
@@ -77,5 +83,14 @@ if(cuisson_souhaitee == "bleu"){
 ```
 Correction
 ```js
+poids = parseInt(prompt("Quel poids souhaitez-vous cuire ?"));
+cuisson_souhaitee = prompt("Quel cuisson souhaitez-vous ?");
+type_de_viande = prompt("Type de viande à cuire ?")
 
-```
+if(cuisson_souhaitee == "bleu"){
+    if(type_de_viande == "boeuf"){
+    alert(0.02 * poids);
+    } else if(type_de_viande == "porc"){
+    alert (
+    }
+}
