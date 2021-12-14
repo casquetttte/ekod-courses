@@ -290,5 +290,12 @@ while (compteur<10){
 }
 
 // #2 Compter de 0 à 9 dans la console
+compteur = 0
+for (compteur=0;compteur<10;compteur++){
+    console.log(compteur)
+    compteur+1
+}
+
+// #3 Afficher la table de 3 dans la console (de 0 x 3 à 9 x 3)
 
  ```
