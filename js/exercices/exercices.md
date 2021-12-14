@@ -318,3 +318,25 @@ for(compteur=0;compteur<11;compteur++){
     compteur++
 }
  ```
+
+### Exercice 5
+Ecrire le code d'un jeu ou le joueur doit deviner un nombre. <br/>
+
+1/ Le programme choisit un nombre aleatoire compris entre 0 et 100 avec ce code: `nombre_aleatoire = Math.floor(Math.random()*101)` <br/>
+Mais ne l'affiche pas à l'utilisateur.
+
+2/ Le programme demande à l'utilisateur de saisir un nombre et lui répond :
+ - C'est plus
+ - C'est moins
+ - Bravo la réponse était ...
+
+3/le programme repete la question jusqu'à ce que le joueur trouve le bon nombre.
+
+4/ Demander à l'utilisateur si il souhaite rejouer (sans quitter le programme).
+
+5/ L'utilisateur dispose de 10 tentatives pour deviner le nombre.
+
+Lorsqu'il dépasse 10 tentative le jeu se termine et indique :
+ - Vous avez perdu
+
+Puis demande à l'utilisateur si il souhaite rejouer.
