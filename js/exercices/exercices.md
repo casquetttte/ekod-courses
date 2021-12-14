@@ -52,7 +52,7 @@ if(cuisson == "bleu"){
 } else if(cuisson == "bien cuit"){
     alert(poids * bien_cuit);
 } else {
-  alert("Ecrit mieux zebi")
+    alert("Ecrit mieux zebi")
 }
 ```
 Correction
