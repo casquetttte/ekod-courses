@@ -99,7 +99,6 @@ if(cuisson_souhaitee == "bleu"){
 ```
 
 ### Exercice 3
-### Exercice 3
 On a besoin d'un outil pour simplifier la vie d'un professeur principal d'une classe de première pour faire les appréciations du bulletin de notes du trimestre, 
 créer un programme qui génèrera (et affichera) l'appréciation en fonction des notes du trimestre
 
