@@ -34,3 +34,6 @@ for(i=0;i<5;i++){
     alert("j'aime bien")
 }
 ```
+
+### Boucle "do while"
+https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/do...while
