@@ -297,5 +297,12 @@ for (compteur=0;compteur<10;compteur++){
 }
 
 // #3 Afficher la table de 3 dans la console (de 0 x 3 à 9 x 3)
+compteur = 0
+for(compteur=0;compteur<10;compteur++){
+    console.log(compteur + " x 3 = " + compteur*3)
+    compteur++
+}
+
+// #4 Afficher la table de 7 dans la console (de 0 x 7 à 9 x 7)
 
  ```
