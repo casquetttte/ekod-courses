@@ -91,6 +91,9 @@ if(cuisson_souhaitee == "bleu"){
     if(type_de_viande == "boeuf"){
     alert(0.02 * poids);
     } else if(type_de_viande == "porc"){
-    alert (
-    }
+    alert (0.0375 * poids);
+    } else {
+    alert("Ecrit mieux zebi");
 }
+// Insérer la suite parce que j'ai la flemme
+```
