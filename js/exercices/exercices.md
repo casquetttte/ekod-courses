@@ -386,3 +386,15 @@ Correction
 ```js
 
 ```
+
+### Exercice 6
+Reprendre l'exemple fait ensemble pour demander les notes des élèves d'une classe à l'utilisateur
+
+1/ Afficher dans la console (une par une) toutes les notes inférieures à 5 <br/>
+2/ Créer et afficher dans la console un tableau contenant toutes les notes supérieures à 10 <br/>
+3/ Afficher le pourcentage (vous pouvez commencer par afficher le nombre) de notes supéreieures à la moyenne <br/>
+4/ Afficher la meilleure note de la classe
+
+```js
+
+```
