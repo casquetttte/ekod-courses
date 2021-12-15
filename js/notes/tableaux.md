@@ -42,3 +42,31 @@ for(i=0;i<nombre_notes;i++){ // "i<nombre_notes" : s'arrêtera quand l'utilisate
 console.log(notes)
 ```
 
+```js
+//merde
+notes = []
+
+nombre_notes = parseInt(prompt("Nombre de notes à renseigner"))
+
+for(i=0;i<nombre_notes;i++){ // "i<nombre_notes" : s'arrêtera quand l'utilisateur l'aura décidé
+    new_note = parseInt(prompt("Renseigner une note"))
+    notes.push(new_note)
+}
+console.log(notes)
+
+total_notes = 0
+debugger;
+for(i=0;i<5;i++){
+    // console.log(notes[i])
+    total_notes = total_notes + notes[i]
+    // total_notes += notes[i]
+}
+
+console.log(total_notes / nombre_notes)
+/*
+notes [1]
+
+mon_nombre = 1
+notes[mon_nombre]
+*/
+```
