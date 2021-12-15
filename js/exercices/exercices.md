@@ -408,4 +408,49 @@ for(i=0;i<notes.length;i++){
     }
 }
 
+// #3
+notes = []
+
+nombre_notes = parseInt(prompt("Nombre de notes à renseigner"))
+compteur = 0
+nonot = 0
+for(compteur=0;compteur<nombre_notes;compteur++){ // "i<nombre_notes" : s'arrêtera quand l'utilisateur l'aura décidé
+    new_note = parseInt(prompt("Renseigner une note"))
+    notes.push(new_note)
+}
+console.log(notes)
+
+console.log("#### NOTES INFÉRIEURES À 10 ####")
+for(compteur=0;compteur<notes.length;compteur++){
+    inf_note = notes[compteur]
+    if(inf_note<10){
+        console.log("Notes : "+inf_note)
+    }
+}
+
+console.log("#### NOTES SUPÉRIEURES À 10 ####")
+for(compteur=0;compteur<notes.length;compteur++){
+    sup_note = notes[compteur]
+    if(sup_note>10){
+        console.log("Notes : "+sup_note)
+        nonot++
+    }
+}
+
+console.log("Nombre de notes : "+compteur)
+console.log("#### MOYENNE ####")
+total_notes = -1
+for(compteur=0;compteur<5;compteur++){
+    // console.log(notes[i])
+    // total_notes = total_notes + notes[i]
+    total_notes += notes[compteur]
+}
+
+console.log("Moyenne des notes : "+total_notes / nombre_notes)
+pourcent = nonot / nombre_notes * 100
+console.log("Pourcentage de notes supérieures à la moyenne : "+pourcent)
+
+// #4
+
+
 ```
