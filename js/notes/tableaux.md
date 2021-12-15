@@ -70,3 +70,22 @@ mon_nombre = 1
 notes[mon_nombre]
 */
 ```
+
+```js
+notes = []
+
+notes_eleve = parseInt(prompt("Nombre de notes à renseigner"))
+
+for(i=0;i<notes_eleve;i++){ // "i<nombre_notes" : s'arrêtera quand l'utilisateur l'aura décidé
+    new_note = parseInt(prompt("Renseigner une note"))
+    notes.push(new_note)
+}
+console.log(notes)
+
+for(i=0;i<notes.length;i++){
+    une_note = notes[i]
+}
+
+une_note = 3
+console.log(notes)
+```
