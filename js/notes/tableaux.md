@@ -31,5 +31,14 @@ console.log(table[3])
 ```
 
 ```js
+notes = []
 
+nombre_notes = parseInt(prompt("Nombre de notes à renseigner"))
+
+for(i=0;i<nombre_notes;i++){ // "i<nombre_notes" : s'arrêtera quand l'utilisateur l'aura décidé
+    new_note = parseInt(prompt("Rensigner une note"))
+    notes.push(new_note)
+}
+console.log(notes)
 ```
+
