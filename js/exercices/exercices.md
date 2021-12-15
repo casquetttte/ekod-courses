@@ -382,5 +382,15 @@ Reprendre l'exemple fait ensemble pour demander les notes des élèves d'une cla
 4/ Afficher la meilleure note de la classe
 
 ```js
+// #1
+notes = []
+
+notes_eleve = parseInt(prompt("Nombre de notes à renseigner"))
+
+for(i=0;i<notes_eleve;i++){ // "i<nombre_notes" : s'arrêtera quand l'utilisateur l'aura décidé
+    new_note = parseInt(prompt("Renseigner une note"))
+    notes.push(new_note)
+}
+console.log(notes)
 
 ```
