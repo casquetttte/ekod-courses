@@ -10,7 +10,7 @@ test()
 test()
 test()
 
-/* test
+/* ######## TEST DE LA FONCTION ########
 function test(prenom){
     alert("yo "+prenom);
 }
