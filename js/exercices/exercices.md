@@ -451,13 +451,12 @@ pourcent = nonot / nombre_notes * 100
 console.log("Pourcentage de notes supérieures à la moyenne : "+pourcent)
 
 // #4
-
 top_note=0
   for (i=0;i<notes.length;i++){
     if(notes[i]>top_note){
       top_note=notes[i]
     }
   }
-  console.log("====== best note ======")
+  console.log("#### MEILLEURE NOTE ####")
   console.log(top_note + " est la note la plus élever de la classe")
 ```
