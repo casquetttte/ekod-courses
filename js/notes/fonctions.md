@@ -9,4 +9,12 @@ function test(prenom){
 test()
 test()
 test()
+
+/* test
+function test(prenom){
+    alert("yo "+prenom);
+}
+
+test("anthony")
+*/
 ```
