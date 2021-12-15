@@ -399,5 +399,13 @@ for(i=0;i<notes.length;i++){
     }
 }
 
+// #2
+notes = [19,14,9,12,4,3,18,2,11,6]
+for(i=0;i<notes.length;i++){
+    une_note = notes[i]
+    if(une_note<10){
+        console.log(une_note)
+    }
+}
 
 ```
