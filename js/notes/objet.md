@@ -9,4 +9,5 @@ user.mail = exemple@mail.com
 console.log(user)
 
 console.log(user["mail"])
+console.log(user["user"])
 ```
