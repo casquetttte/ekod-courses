@@ -43,6 +43,13 @@ console.log(notes)
 ```
 
 ```js
+notes [1]
+// La ligne ci-dessus et les 2 lignes ci-dessous signifient la même chose
+mon_nombre = 1
+notes[mon_nombre]
+```
+
+```js
 //merde
 notes = []
 
