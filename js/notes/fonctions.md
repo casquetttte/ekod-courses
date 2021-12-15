@@ -2,7 +2,7 @@
 
 ### Fonction additionner
 ```js
-function test(){
+function test(prenom){
     alert("hello world!");
 }
 
