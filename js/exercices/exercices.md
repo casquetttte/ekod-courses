@@ -78,9 +78,6 @@ Pour cuire 400g de porc, il faut : <br/>
 4/ Demander à l'utilisateur de saisir le poids de la viande à cuire en grammes <br/>
 5/ Si l'utilisateur indique une mauvaise cuisson / une mauvaise viande, afficher un message d'erreur 
 
-```js
-
-```
 Correction
 ```js
 poids = parseInt(prompt("Quel poids souhaitez-vous cuire ?"));
@@ -374,17 +371,6 @@ while(nombre_aleatoire!=nombre_joueur){
         alert("Bravo la réponse était "+nombre_aleatoire);
     }
 }
-
-// #4
-
-
-// #5
-
-
-```
-Correction
-```js
-
 ```
 
 ### Exercice 6
