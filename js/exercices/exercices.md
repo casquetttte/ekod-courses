@@ -458,5 +458,5 @@ top_note=0
     }
   }
   console.log("#### MEILLEURE NOTE ####")
-  console.log(top_note + " est la note la plus élever de la classe")
+  console.log(top_note + " est la note la plus élevé de la classe")
 ```
