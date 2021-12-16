@@ -74,4 +74,9 @@ h1 {
 mon_input = document.getElementById("un_input")
 console.log(mon_input.value) // Détaille la valeur de l'input dans la console
 mon_input.value = "shesh" // Remplace la valeur de l'input
+
+function ma_fonction(){ // Ajoute une fonction (ma_fonction)
+    console.log("Salut") // Affiche "salut" dans la console
+}
+document.addEventListener() // Ajoute un évènement pour déclencher une fonction/action
 ```
