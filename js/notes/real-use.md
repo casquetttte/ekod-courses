@@ -80,6 +80,6 @@ function ma_fonction(){ // Ajoute une fonction (ma_fonction)
 }
 //document.addEventListener() // Ajoute un évènement pour déclencher une fonction/action
 document.addEventListener("keydown", ma_fonction) // Ajoute un event lorsque que l'user presse une touche
-document.addEventListener("mousedown", ma_fonction) // Ajoute un event lorsque que l'user clique
+mon_input.addEventListener("mousedown", ma_fonction) // Ajoute un event lorsque que l'user clique sur l'input
 
 ```
