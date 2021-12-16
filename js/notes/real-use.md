@@ -53,7 +53,7 @@ ma_balise.style.color="pink" // Permet d'appliquer du style à la div
     <body>
         <div id="ma_div">CASK</div>
 
-            <input type="text">
+            <input type="text" id="un_input">
         
         <script src="ekip.js"></script>
     </body>
