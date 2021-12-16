@@ -29,6 +29,13 @@
   En utilisant JavaScript et en ajoutant du code dans cette balise <script> uniquement :
   changer la couleur de fond de la balise div ayant l'id "rond" lorsque l'utilisateur clique sur cette même balise div.
    */
+  // ##### MA RÉPONSE #####
+  rond = document.getElementById("rond")
+  function clic_color(){
+    rond.style.backgroundColor='red'
+  }
+  rond.addEventListener("mousedown", clic_color)
+  // ##### MA RÉPONSE #####
 </script>
 </body>
 </html>
