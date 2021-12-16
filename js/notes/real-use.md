@@ -16,6 +16,17 @@
 </html>
 ```
 ```js
+body {
+    background-image: url(img.png);
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+```
+```js
 ma_balise = document.getElementById("ma_div") // Appel un élément (div) par son ID
 console.log(ma_balise) // Détail le délire dans la console
 
