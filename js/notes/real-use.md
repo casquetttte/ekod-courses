@@ -71,11 +71,6 @@ h1 {
 }
 ```
 ```js
-ma_balise = document.getElementById("ma_div")
-console.log(ma_balise)
-
-ma_balise.innerHTML = '<h1>WSH LE GANG !</h1>'
-
-ma_balise.style.backgroundColor='#0b0b0b'
-ma_balise.style.color="pink"
+mon_input = document.getElementById("un_input")
+console.log(mon_input)
 ```
