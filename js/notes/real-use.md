@@ -16,8 +16,11 @@
 </html>
 ```
 ```js
-ma_balise = document.getElementById("a_div")
-console.log(ma_balise)
+ma_balise = document.getElementById("ma_div") // Appel un élément (div) par son ID
+console.log(ma_balise) // Détail le délire dans la console
 
-ma_balise.innerText
+ma_balise.innerText = "wsh" // Remplace du texte dans la  html
+ma_balise.innerText += " l'équipe" // Ajoute du texte dans la div
+
+//ma_balise.innerText += "<h1>WSH LE GANG !</h1>" // Ecrit une balise dans la div
 ```
