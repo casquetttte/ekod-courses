@@ -1,4 +1,4 @@
-### 1er test
+## Utilisation de JS avec du HTML
 ```html
 <!DOCTYPE html>
 <html lang="fr">
