@@ -73,5 +73,5 @@ h1 {
 ```js
 mon_input = document.getElementById("un_input")
 console.log(mon_input.value) // Détaille la valeur de l'input dans la console
-
+mon_input.value = "shesh" // Remplace la valeur de l'input
 ```
