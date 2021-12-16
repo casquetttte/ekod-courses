@@ -51,10 +51,10 @@ ma_balise.style.color="pink" // Permet d'appliquer du style à la div
 
     </head>
     <body>
-        <div id="ma_div">
-            <h1>cask</h1>
-        </div>
+        <div id="ma_div">CASK</div>
 
+            <input type="text">
+        
         <script src="ekip.js"></script>
     </body>
 </html>
