@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body id="body">
+<style>
+  body,html{
+    height: 100%;
+  }
+  body {
+    margin: 0;
+  }
+
+  #carre {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+  }
+
+  .positionner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+</style>
+<div class="positionner">
+  <label for="width">width</label>
+  <input type="number" id="width">
+  <label for="height">height</label>
+  <input type="number" id="height">
+  <button id="confirm">Valider</button>
+</div>
+<div id="carre"></div>
+<script>
+  /* TODO au click du bouton valider définir la taille du carré en fonction de la valeur des champs inputs
+  ----------------------------
+  Résoudre l'exercice en utilisant JavaScript et en ajoutant du code dans cette balise <script> uniquement.
+  Définir la taille de la balise div ayant l'id carre à l'aide des valeurs contenues dans les champs ayant les id
+  width et height.
+
+  Rappels de cours:
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+  https://www.w3schools.com/jsref/prop_text_value.asp
+   */
+</script>
+</body>
+</html>

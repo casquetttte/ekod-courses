@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body id="body">
+<style>
+  body,html{
+    height: 100%;
+  }
+  body {
+     margin: 0;
+  }
+
+  #result {
+   position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 50px;
+  }
+
+  .positionner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
+<div id="result">+-</div>
+<div class="positionner">
+
+  <label for="choice">entrer un nombre</label>
+  <input type="number" id="choice">
+  <button id="confirm">Valider</button>
+</div>
+
+<script>
+  /* TODO "c'est plus, c'est moins"
+  ----------------------------
+  Résoudre l'exercice en utilisant JavaScript et en ajoutant du code dans cette balise <script> uniquement.
+  1/ au chargement de la page : choisir un nombre aléatoire entre 0 et 100
+  2/ au click du bouton valider : afficher dans la div ayant l'id result si le nombre aléatoire est supérieur, inférieur
+  ou égal à la valeur de l'input ayant l'id choice
+
+  Rappels de cours:
+  https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
+   */
+</script>
+</body>
+</html>

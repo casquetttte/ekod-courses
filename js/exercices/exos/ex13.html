@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body id="page">
+
+<div id="character"></div>
+
+<style>
+  img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    content: url("img/cobble.png");
+  }
+  html, body {
+    margin: 0;
+    height: 100%;
+    background-size: 100px;
+    background-image: url("img/grass.jpg");
+  }
+
+  #character {
+    z-index: 1;
+    background-position-y: -15px;
+    width: 200px;
+    height: 230px;
+    background-image: url("img/sprite.png");
+    background-size: 700px;
+    position: absolute;
+  }
+</style>
+<script>
+
+  body = document.getElementById('page')
+  isleft = false
+  isright = false
+  isup = false
+  isdown = false
+  posX = 0;
+  posY = 0;
+  body.addEventListener('keydown', move)
+  body.addEventListener('keyup', unmove )
+  spritestate = 0
+  mooving = 0
+  function unmove(e) {
+    if (e.key === 'd') {
+      isright = false
+    }
+    if (e.key === 'q') {
+      isleft = false
+    }
+    if (e.key === 'z') {
+      isup = false
+    }
+    if (e.key === 's') {
+      isdown = false
+    }
+    if (!isright && !isleft && !isup && !isdown ){
+      mooving = 0;
+    }
+  }
+  function move (e) {
+    if (e.key === 'd') {
+          mooving = 1
+      isright = true
+    }
+    if (e.key === 'q') {
+          mooving = 1
+      isleft = true
+    }
+    if (e.key === 'z') {
+          mooving = 1
+      isup = true
+    }
+    if (e.key === 's') {
+          mooving = 1
+      isdown = true
+    }
+  }
+
+  function setsprite () {
+    spritestate++
+    if (spritestate >= 4) {
+      spritestate = 0
+    }
+    if (spritestate === 0 || spritestate === 2 || mooving === 0) {
+      character.style.height = '230px'
+      character.style.backgroundPositionY = '-15px'
+    }
+    if (spritestate === 1 && mooving === 1) {
+      character.style.height = '230px'
+      character.style.backgroundPositionY = '250px'
+    }
+    if (spritestate === 3 && mooving === 1) {
+      character.style.backgroundPositionY = '445px'
+      character.style.height = '210px'
+    }
+  }
+  function domove(){
+    if (isright) {
+      character.style.backgroundPositionX = '365px'
+      posX+=10;
+      character.style.left = posX + 'px'
+    }
+    if (isleft) {
+      character.style.backgroundPositionX = '0px'
+      posX-=10;
+      character.style.left = posX + 'px'
+    }
+    if (isup) {
+      character.style.backgroundPositionX = '200px'
+      posY-=10
+      character.style.top = posY + 'px'
+    }
+    if (isdown) {
+      character.style.backgroundPositionX = '530px'
+      posY+=10
+      character.style.top = posY + 'px'
+    }
+  }
+  setInterval(setsprite, 300)
+  setInterval(domove, 50)
+
+  //TODO
+
+
+  /* TODO permettre au cousin de Steve de poser des blocs de cobblestone (balises img) sous ses pieds
+   ----------------------------
+   Résoudre l'exercice en utilisant JavaScript et en ajoutant du code dans cette balise <script> uniquement.
+   En appuyant sur la barre espace : créer une nouvelle balise HTML à l'aide de la methode .createElement et positionner
+   ce nouvel élement sous le personnage (div ayant l'id character) :
+
+   Cours:
+   https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+   https://www.w3schools.com/jsref/met_document_createelement.asp
+   https://openclassrooms.com/fr/courses/1916641-dynamisez-vos-sites-web-avec-javascript/1918600-manipuler-le-code-html-partie-2-2#/id/r-1924593
+    */
+
+
+</script>
+
+</body>
+</html>

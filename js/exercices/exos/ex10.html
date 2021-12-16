@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body id="body">
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  #balle {
+    width: 30px!important;
+    height: 30px;
+    border-radius: 30px;
+    background-color: gray;
+    position: absolute;
+    bottom: 50vh;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  #raquette {
+    height: 20px;
+    border-radius: 10px;
+    width: 140px;
+    background-color: red;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0!important;
+    left: 50vw;
+  }
+</style>
+<div id="balle"></div>
+<div id="raquette"></div>
+<script>
+  var height = window.innerHeight
+  var width = window.innerWidth
+  var vx = 5
+  var vy = 10
+  var posX = width / 2
+  var posY = height / 2
+  var ball = document.getElementById('balle')
+  var raquette = document.getElementById('raquette')
+
+  function mooveball () {
+    posX += vx
+    posY += vy
+    if (posX > width) {
+      posX = width
+      vx = -vx - 1
+    }
+    if (posX < 0) {
+      posX = 0
+      vx = -vx + 1
+    }
+    if (posY > height) {
+      posY = height
+      vy = -vy - 1
+    }
+    if (posY < 20) {
+      if (posX > raquette.offsetLeft - 70 && posX < raquette.offsetLeft + 70) {
+        vx -= (raquette.offsetLeft - posX)/10
+        posY = 20
+        vy = -vy + 1
+      }
+    }
+    if (posY < 0) {
+      vx = 0
+      vy = 0
+      posX = width / 2
+      posY = height / 2
+    }
+    ball.style.left = posX + 'px'
+    ball.style.bottom = posY + 'px'
+  }
+  setInterval(mooveball, 50)
+
+  /* TODO "casse briques"
+  ----------------------------
+  En utilisant JavaScript et en ajoutant du code après ce commentaire uniquement :
+
+  Voici un casse brique fonctionnel (sans briques), vous devez faire en sorte de deplacer la barre (balise div ayant
+  l'id raquette) avec les fléches du clavier et/ou la souris (au choix : utiliser au moins une méthode).
+   */
+</script>
+</body>
+</html>

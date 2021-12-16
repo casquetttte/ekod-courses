@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .lien {
+            color: red;
+        }
+    </style>
+</head>
+<body id="body">
+
+<ul>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+    <li><a href="#" class="lien">lien 1</a></li>
+</ul>
+
+<script>
+    /*
+     * exemple : récupérer tous les éléments ayant la même classe avec getElementsByClassName
+     */
+    var links = document.getElementsByClassName('lien');
+    for ( i = 0 ; i < links.length ; i++ ) {
+        links[i].style.fontSize = Math.round(Math.random()*20)+10+"px";
+        links[i].style.opacity = Math.random();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body id="body">
+<style>
+  body,html{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+  }
+
+  #fleche{
+    width: 100px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+  #fleche:after{
+    content: '';
+    height: 0;
+    width: 0;
+    border: 30px solid transparent;
+    border-left-color: red;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -25px;
+
+  }
+</style>
+<div id="fleche"></div>
+<script>
+  /* TODO faire tourner la flèche avec les fleches du clavier
+  ----------------------------
+  En utilisant JavaScript et en ajoutant du code dans cette balise <script> uniquement :
+  lorsque l'utilisateur utilise les flèches de son clavier  (haut, bas, gauche, droite) : orienter la flèche de la
+  balise div "fleche" dans le même sens que la touche qui a été pressée à l'aide de la propriété css transform.
+
+  Rappels de cours:
+  https://developer.mozilla.org/en-US/docs/Web/Events
+  https://developer.mozilla.org/en-US/docs/Web/Events/keydown
+  https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate
+   */
+</script>
+</body>
+</html>

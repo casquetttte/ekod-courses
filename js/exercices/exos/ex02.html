@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body id="body">
+<style>
+  @keyframes translationing {
+    0%{
+      background-position-x: 100vw;
+    }
+    100%{
+      background-position-x: 0;
+    }
+  }
+  html{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+    height: 100%;
+    background-size: 100vw;
+    background-image: url("img/Urban_Landscape_18_4.jpg");
+    animation: translationing linear 5s infinite;
+  }
+  #bird{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 20vw;
+  }
+  #scoreboard{
+    position: fixed;
+    font-family: monospace;
+    color: yellow;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    padding: 20px;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+  }
+</style>
+<div id="scoreboard"></div>
+<img src="img/superbird.png" alt="" id="bird">
+<script>
+  var dead = false;
+  var score = 0
+  var vy = 5;
+  var py = 50;
+  function setPos () {
+    py+= vy
+    vy-=1
+    if(py < 0){
+      vy = 0
+      py = 0
+      dead = true
+      document.getElementById('scoreboard').style.color = 'red';
+    }
+    if(py > 100){
+      vy = 0
+      py = 100
+      dead = true
+      document.getElementById('scoreboard').style.color = 'red';
+
+    }
+    document.getElementById('bird').style.bottom = py+'vh'
+  }
+  function setScore(){
+    if(!dead)
+      score++;
+    document.getElementById('scoreboard').innerText = score;
+
+  }
+  setInterval(setPos,100)
+  setInterval(setScore,1000)
+  function jump () {
+    vy = 8;
+  }
+
+  /* TODO aider superman à voler en appuyant sur la touche espace
+  ----------------------------
+  En utilisant JavaScript et en ajoutant du code après ce commentaire uniquement :
+  écrire l'instruction Javascript permettant d'exécuter la fonction jump lorsque l'utilisateur
+  appuie sur une touche du clavier.
+
+  Rappels de cours:
+  https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+   */
+</script>
+</body>
+</html>

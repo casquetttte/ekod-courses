@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body id="body">
+<style>
+  body,html{
+    height: 100%;
+  }
+  body{
+    margin: 0;
+  }
+  #croix{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    margin-left: -45px;
+    background-color: cadetblue;
+  }
+  #croix:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 100px;
+    margin-top: -45px;
+    margin-left: 45px;
+    background-color: cadetblue;
+  }
+</style>
+<div id="croix"></div>
+<script>
+  /* TODO au click positionner la croix à l'emplacement de la souris
+  ----------------------------
+  En utilisant JavaScript et en ajoutant du code dans cette balise <script> uniquement :
+  lorsque l'utilisateur clique n'importe où dans la page : positionner  la balise div ayant l'id croix à l'endroit
+  ou se trouve la souris.
+
+  Rappels de cours:
+  https://developer.mozilla.org/en-US/docs/Web/Events
+  https://developer.mozilla.org/en-US/docs/Web/Events/click
+   */
+</script>
+</body>
+</html>
