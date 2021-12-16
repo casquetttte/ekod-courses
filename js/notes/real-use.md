@@ -34,4 +34,5 @@ ma_balise.innerText = "wsh" // Remplace du texte dans la  html
 ma_balise.innerText += " l'équipe" // Ajoute du texte dans la div
 
 ma_balise.innerHTML += '<h1>WSH LE GANG !</h1>' // Ecrit une balise dans la div
+ma_balise.style.backgroundColor='#e3e3e3' // Permet d'appliquer du style à la div
 ```
