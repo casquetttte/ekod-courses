@@ -47,6 +47,17 @@
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
   https://www.w3schools.com/jsref/prop_text_value.asp
    */
+  // ##### MA RÉPONSE #####
+  submit = document.getElementById("confirm")
+  cube = document.getElementById("carre");
+  function taille() {
+  width = document.getElementById("width").value
+  height = document.getElementById("height").value
+  cube.style.width = width + "px";
+  cube.style.height = height + "px";
+  }
+  submit.addEventListener("click", taille)
+  // ##### MA RÉPONSE #####
 </script>
 </body>
 </html>
