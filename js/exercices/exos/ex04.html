@@ -37,6 +37,14 @@
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
    */
+  // ##### MA RÉPONSE #####
+  losange = document.getElementById("losange")
+  function clic_color(){
+    randomColor = Math.floor(Math.random()*16777215).toString(16);
+    losange.style.backgroundColor='#'+randomColor
+  }
+  losange.addEventListener("click", clic_color)
+  // ##### MA RÉPONSE #####
 </script>
 </body>
 </html>
