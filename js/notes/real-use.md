@@ -1,4 +1,6 @@
-## Utilisation de JS avec du HTML
+# Utilisation de JS avec du HTML
+
+### 1er test
 ```html
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,4 +38,15 @@ ma_balise.innerText += " l'équipe" // Ajoute du texte dans la div
 ma_balise.innerHTML += '<h1>WSH LE GANG !</h1>' // Ecrit une balise dans la div
 ma_balise.style.backgroundColor='#0b0b0b' // Permet d'appliquer du style à la div
 ma_balise.style.color="pink" // Permet d'appliquer du style à la div
+```
+
+2e test
+```html
+
+```
+```css
+
+```
+```js
+
 ```
