@@ -15,7 +15,7 @@
     </body>
 </html>
 ```
-```js
+```css
 body {
     background-image: url(img.png);
     color: black;
