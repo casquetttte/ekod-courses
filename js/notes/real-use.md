@@ -78,5 +78,7 @@ mon_input.value = "shesh" // Remplace la valeur de l'input
 function ma_fonction(){ // Ajoute une fonction (ma_fonction)
     console.log("Salut") // Affiche "salut" dans la console
 }
-document.addEventListener() // Ajoute un évènement pour déclencher une fonction/action
+//document.addEventListener() // Ajoute un évènement pour déclencher une fonction/action
+document.addEventListener("keydown", ma_fonction) // Ajoute un event lorsque que l'user presse une touche
+
 ```
