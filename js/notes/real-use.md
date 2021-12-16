@@ -30,7 +30,7 @@ h1 {
 ```
 ```js
 ma_balise = document.getElementById("ma_div") // Appel un élément (div) par son ID
-console.log(ma_balise) // Détail le délire dans la console
+console.log(ma_balise) // Détaille le délire dans la console
 
 ma_balise.innerText = "wsh" // Remplace du texte dans la  html
 ma_balise.innerText += " l'équipe" // Ajoute du texte dans la div
@@ -72,5 +72,6 @@ h1 {
 ```
 ```js
 mon_input = document.getElementById("un_input")
-console.log(mon_input)
+console.log(mon_input.value) // Détaille la valeur de l'input dans la console
+
 ```
