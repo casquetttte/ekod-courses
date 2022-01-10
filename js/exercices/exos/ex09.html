@@ -49,6 +49,20 @@
   Rappels de cours:
   https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
    */
+  
+  // ##### SOLUTION PAS FINI #####
+// console.log(Math.floor(Math.random()*100));
+var nombre = Math.floor(Math.random()*100);
+document.getElementById('confirm').addEventListener('click', function() {
+  var choice = document.getElementById('choice').value;
+  if ( choice > nombre ) {
+    document.getElementById('result').innerHTML = 'le nombre est plus petit'
+  } else if ( choice < nombre ) {
+    document.getElementById('result').innerHTML = 'le nombre est plus grand'
+  } else {
+    document.getElementById('result').innerHTML = 'gagné !'
+});
+  // ##### SOLUTION PAS FINI #####
 </script>
 </body>
 </html>
