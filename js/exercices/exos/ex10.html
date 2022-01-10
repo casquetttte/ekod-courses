@@ -89,8 +89,19 @@
   Voici un casse brique fonctionnel (sans briques), vous devez faire en sorte de deplacer la barre (balise div ayant
   l'id raquette) avec les fléches du clavier et/ou la souris (au choix : utiliser au moins une méthode).
    ##### SOLUTION #####
-  
-  eeeeeeeb  
+var position = 50;
+
+document.getElementById('body').addEventListener('keypress', function(event) {
+
+  if( event.key == "a" ) {
+    position = position - 5
+  } else if( event.key == "z" ) {
+    position = position + 5
+  }
+
+  document.getElementById('raquette').style.left = position + 'vw';
+});  
+##### SOLUTION #####
   
 </script>
 </body>
