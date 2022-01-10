@@ -42,6 +42,19 @@
   Cours:
   https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
    */
+  
+  // ##### SOLUTION #####
+  
+  var temps = 0;
+
+function maFonction() {
+  temps = temps + 1;
+  document.getElementById('time').innerHTML = temps;
+}
+ 
+setInterval(maFonction, 1000);
+  
+  // ##### SOLUTION #####
 </script>
 </body>
 </html>
