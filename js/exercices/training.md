@@ -28,7 +28,8 @@
         } 
             
         liste = ['https://swapi.dev/api/people/1/','https://swapi.dev/api/people/3/','https://swapi.dev/api/people/4/','https://swapi.dev/api/people/5/','https://swapi.dev/api/people/10/','https://swapi.dev/api/people/11/','https://swapi.dev/api/people/13/']
-            
+        //liste = ['http://pastebin.fr/100534','http://pastebin.fr/100535','http://pastebin.fr/100536']
+        
         document.getElementById('btn1').addEventListener('click', function () {
             aleatoire = liste[Math.floor(Math.random()* liste.length)]
             $.ajax(aleatoire).done(function(data) {
