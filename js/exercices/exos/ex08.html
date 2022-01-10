@@ -62,8 +62,11 @@
   // ##### RÉPONSE PROF #####
   document.getElementById('confirm').addEventListener('click', function () {
     document.getElementById('carre').style.width =
-      document.getElementById('wisth').value + 'px';
- });  
+      document.getElementById('width').value + 'px';
+    
+    document.getElementById('carre').style.width =
+      document.getElementById('height').value + 'px';
+ })  
   // ##### RÉPONSE PROF #####
 </script>
 </body>
