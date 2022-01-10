@@ -81,5 +81,9 @@ function ma_fonction(){ // Ajoute une fonction (ma_fonction)
 //document.addEventListener() // Ajoute un évènement pour déclencher une fonction/action
 document.addEventListener("keydown", ma_fonction) // Ajoute un event lorsque que l'user presse une touche
 mon_input.addEventListener("mousedown", ma_fonction) // Ajoute un event lorsque que l'user clique sur l'input
-
+```
+```js
+document.getElementById('page').addEventListener('click', function() { // Ajoute un event lorsque la balise "page" est cliquée
+    document.getElementById('balise1').style.backgroundColor = 'purple' // L'event change la couleur de la balise "balise1" en violet
+};
 ```
