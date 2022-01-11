@@ -27,6 +27,14 @@
 
                 console.log(utilisateur.authKey);
             
+		$.ajax({
+                url: 'https://api.messenger.codecolliders.dev/changeUsername',
+                method: 'POST',
+                data: {
+                    authKey: "67ec96b5a3dfd77ff0c931ebec2e6013",
+                    username: "cask"
+                      }
+            	})  
         </script>
     </body>
 </html>
