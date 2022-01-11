@@ -15,3 +15,7 @@
 *MDN Web Docs, précédemment Mozilla Developer Network et anciennement Mozilla Developer Center, est un dépôt de documentation et une ressource d'apprentissage pour les développeurs web utilisés par Mozilla, Microsoft, Google et Samsung.* </br>
 `https://developer.mozilla.org/fr/`
 
+### Postman
+#### Description du web
+*Postman est une application permettant de tester des API, créée en 2012 par Abhinav Asthana, Ankit Sobti et Abhijit Kane à Bangalore pour répondre à une problématique de test d'API partageable.*
+`https://www.postman.com/`
