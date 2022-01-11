@@ -174,3 +174,61 @@
 </body>
 </html>
 ```
+```html
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo</title>
+</head>
+<body>
+    
+    Afficher la météo pour la ville : 
+    <!-- balises HTML pour la recherche -->
+    <input id="query" type="text"> 
+    <input id="searchBtn" type="submit" value="Go">
+
+    <!-- balises HTML pour accueilir les données qui proviennent de l'API -->
+    <h1 id="name"></h1>
+    <p id="coord"></p>
+    <h2 id="temp"></h2>
+    <h3 id="wind"></h3>
+
+    <!-- import de la librairie jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // définition de l'action au clique sur le bouton Go
+        document.getElementById('searchBtn').addEventListener('click', function () {
+            // récupérer la requête saisie par l'utilisateur dans le champ de recherche
+            var query = document.getElementById('query').value;
+
+            // on effectue l'appel à l'API open weather map
+            $.ajax({
+                url: 'https://api.openweathermap.org/data/2.5/weather',
+                method: 'GET',
+                data: {
+                    appid: 'aeced65d7ee8570df87f1e20ccf0af88',
+                    q: query,
+                    units: 'metric'
+                }
+            }).done(function (data) {
+                // injection des données reçues depuis l'API vers les balises HTML présentes dans la page
+                document.getElementById('name').innerHTML = data.name
+                document.getElementById('coord').innerHTML = '📌 '+data.coord.lat+', '+data.coord.lon
+                document.getElementById('temp').innerHTML = data.main.temp+'°C - '+data.weather[0].main
+                document.getElementById('wind').innerHTML = 'Vent: '+data.wind.speed+'km/h'
+            })
+
+        })
+        
+
+
+    </script>
+
+</body>
+</html>
+```
