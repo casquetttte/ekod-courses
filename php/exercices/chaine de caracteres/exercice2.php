@@ -18,7 +18,9 @@ $a = "Du TexTe aVEc des Majuscules ET des MINUsculES Un peu N'IMPORTE Où !";
 // https://www.php.net/manual/fr/function.strtolower.php
 ?>
 <!-- écrire le code après ce commentaire -->
-
+<?php
+$a = strtolower($a)
+?>
 
 <!-- écrire le code avant ce commentaire -->
 
