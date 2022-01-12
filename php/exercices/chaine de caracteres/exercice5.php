@@ -15,11 +15,12 @@ $a = "Ce texte est écrit en vert!";
 
 // écrire le code permettant de remplacer le mot "vert" par le mot "rouge" dans le texte
 // contenu dans la variable $a en utilisant la fonction str_replace()
-// https://www.php.net/manual/en/function.substr-replace.php
+// https://www.php.net/manual/en/function.str-replace.php
 ?>
 <!-- écrire le code après ce commentaire -->
-
-
+<?php
+$a = str_replace("vert", "rouge", $a);
+?>
 <!-- écrire le code avant ce commentaire -->
 
 <p><?php echo $a; ?></p>
