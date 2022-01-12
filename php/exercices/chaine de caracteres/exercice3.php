@@ -18,7 +18,9 @@ $count = 0
 // https://www.php.net/manual/en/function.strlen.php
 ?>
 <!-- écrire le code après ce commentaire -->
-
+<?php
+$count = strlen($seriousText);
+?>
 
 <!-- écrire le code avant ce commentaire -->
 
