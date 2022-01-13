@@ -18,8 +18,9 @@ $a = "<p>Non !</p> <p>Vive les <strong>chats</strong> !</p>";
 // https://www.php.net/manual/fr/function.strip-tags
 ?>
 <!-- écrire le code après ce commentaire -->
-
-
+<?php
+$a = strip_tags($a);
+?>
 <!-- écrire le code avant ce commentaire -->
 <style>
     pre {
