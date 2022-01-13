@@ -43,7 +43,10 @@ $statistiquesJournalieres = [222, 293, 210, 123, 171, 147, 204, 246, 257, 204, 1
  * - la moyenne journalière (calcul à réaliser: nombre total de visiteur divisé par le nombre de jours)
  */
 echo '<h2>Exercice 13</h2>';
-
+echo "Nombre le plus grand: " .max($statistiquesJournalieres).'<br>';
+echo "Nombre le plus petit: " .min($statistiquesJournalieres).'<br>';
+echo "Total: " .array_sum($statistiquesJournalieres).'<br>';
+echo "Moyenne: " .array_sum($statistiquesJournalieres)/count($statistiquesJournalieres).'<br>';
 ?>
 </body>
 </html>
