@@ -18,8 +18,9 @@ $a = "Le PHP c'est vraiment facile !!!";
 // https://www.php.net/manual/fr/function.wordwrap
 ?>
 <!-- écrire le code après ce commentaire -->
-
-
+<?php
+$a = wordwrap($a, 10, "<br/> \n");
+?>
 <!-- écrire le code avant ce commentaire -->
 <style>
     pre {
