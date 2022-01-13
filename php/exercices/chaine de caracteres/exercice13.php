@@ -19,8 +19,10 @@ $a = "administrateur@enssop.com";
 // ensuite, compter et afficher le nombre de caractères du nom de domaine
 ?>
 <!-- écrire le code après ce commentaire -->
-
-
+<?php
+$a = explode("@", $a);
+$a = strlen($a[1]);
+?>
 <!-- écrire le code avant ce commentaire -->
 <style>
     pre {
