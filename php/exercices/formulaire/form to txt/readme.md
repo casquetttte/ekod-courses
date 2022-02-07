@@ -1,4 +1,4 @@
-# PENSEZ À CRÉER UN FICHIER "EMAILLIST.TXT"
+# PENSEZ À CRÉER UN FICHIER "test.txt"
 
 ## Lien prof
 https://www.php.net/manual/en/function.fwrite
