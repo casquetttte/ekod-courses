@@ -80,5 +80,21 @@ while ($requete = $requetes->fetch() ) {
 ```
 ### Exercice 6
 ```php
+<?php
+// connexion à la base de données
+$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
+
+// selection de l'ensemble d'informations dans la base de données
+$requetes = $dbh->prepare('SELECT SUM(age) AS age2 FROM zlitonian WHERE age >=1000');
+$requetes->execute();
+
+// affichage de la requete
+while ($requete = $requetes->fetch() ) {
+    echo "Il y a : ".$requete['age2']." zlitoniens âgés de plus de 1000 ans"."<br>";
+}
+?>
+```
+### Exercice 7
+```php
 coming soon
 ```
