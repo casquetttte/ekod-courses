@@ -53,7 +53,7 @@ while ($requete = $requetes->fetch() ) {
 $dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
 
 // selection de l'ensemble d'informations dans la base de données
-$requetes = $dbh->prepare('SELECT * FROM users WHERE lvl >=3 AND gold >1 AND name LIKE "%a%" ORDER BY gold DESC LIMIT 10');
+$requetes = $dbh->prepare('SELECT * FROM users WHERE lvl >=3 AND gold < 1000 AND name LIKE "%a%" ORDER BY gold DESC LIMIT 10');
 $requetes->execute();
 
 // affichage de la requete
