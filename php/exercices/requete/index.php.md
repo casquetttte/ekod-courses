@@ -128,5 +128,17 @@ while ($requete = $requetes->fetch() ) {
 ```
 ### Exercice 9
 ```php
-coming soon
+<?php
+// connexion à la base de données
+$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
+
+// selection de l'ensemble d'informations dans la base de données
+$requetes = $dbh->prepare('SELECT COUNT(*) AS name2 FROM users WHERE name LIKE "%zli%"');
+$requetes->execute();
+
+// affichage de la requete
+while ($requete = $requetes->fetch() ) {
+    echo $requete['name2']."<br>";
+}
+?>
 ```
