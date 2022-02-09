@@ -112,7 +112,19 @@ while ($requete = $requetes->fetch() ) {
 ```
 ### Exercice 8
 ```php
+<?php
+// connexion à la base de données
+$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
 
+// selection de l'ensemble d'informations dans la base de données
+$requetes = $dbh->prepare('SELECT SUM(weight) AS weight2 FROM vache WHERE cleanliness = 95');
+$requetes->execute();
+
+// affichage de la requete
+while ($requete = $requetes->fetch() ) {
+    echo "La somme du poids des vaches ayant leur propreté égale à : ".$requete['weight2']."<br>";
+}
+?>
 ```
 ### Exercice 9
 ```php
