@@ -96,7 +96,19 @@ while ($requete = $requetes->fetch() ) {
 ```
 ### Exercice 7
 ```php
+<?php
+// connexion à la base de données
+$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
 
+// selection de l'ensemble d'informations dans la base de données
+$requetes = $dbh->prepare('SELECT AVG(milk_total) AS milk FROM vache');
+$requetes->execute();
+
+// affichage de la requete
+while ($requete = $requetes->fetch() ) {
+    echo "La moyenne de lait produit par les vaches est de : ".$requete['milk']."<br>";
+}
+?>
 ```
 ### Exercice 8
 ```php
