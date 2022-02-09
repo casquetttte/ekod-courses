@@ -85,7 +85,7 @@ while ($requete = $requetes->fetch() ) {
 $dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
 
 // selection de l'ensemble d'informations dans la base de données
-$requetes = $dbh->prepare('SELECT SUM(age) AS age2 FROM zlitonian WHERE age >=1000');
+$requetes = $dbh->prepare('SELECT COUNT(*) AS age2 FROM zlitonian WHERE age > 1000');
 $requetes->execute();
 
 // affichage de la requete
@@ -95,6 +95,10 @@ while ($requete = $requetes->fetch() ) {
 ?>
 ```
 ### Exercice 7
+```php
+
+```
+### Exercice 8
 ```php
 coming soon
 ```
