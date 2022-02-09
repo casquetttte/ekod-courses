@@ -32,5 +32,21 @@ while ($requete = $requetes->fetch() ) {
 ```
 ### Exercice 3
 ```php
+<?php
+// connexion à la base de données
+$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
+
+// selection de l'ensemble d'informations dans la base de données
+$requetes = $dbh->prepare('SELECT * FROM chicken WHERE egg_total BETWEEN 500 AND 550');
+$requetes->execute();
+
+// affichage de la requete
+while ($requete = $requetes->fetch() ) {
+    echo $requete['name']."<br>";
+}
+?>
+```
+### Exercice 4
+```php
 coming soon
 ```
