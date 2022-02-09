@@ -64,5 +64,21 @@ while ($requete = $requetes->fetch() ) {
 ```
 ### Exercice 5
 ```php
+<?php
+// connexion à la base de données
+$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
+
+// selection de l'ensemble d'informations dans la base de données
+$requetes = $dbh->prepare('SELECT * FROM users WHERE lvl >=3 AND gold >1 AND name LIKE "%a%" ORDER BY gold DESC LIMIT 10');
+$requetes->execute();
+
+// affichage de la requete
+while ($requete = $requetes->fetch() ) {
+    echo $requete['name']."<br>";
+}
+?>
+```
+### Exercice 6
+```php
 coming soon
 ```
