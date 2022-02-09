@@ -69,22 +69,6 @@ while ($requete = $requetes->fetch() ) {
 $dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
 
 // selection de l'ensemble d'informations dans la base de données
-$requetes = $dbh->prepare('SELECT * FROM users WHERE lvl >=3 AND gold >1 AND name LIKE "%a%" ORDER BY gold DESC LIMIT 10');
-$requetes->execute();
-
-// affichage de la requete
-while ($requete = $requetes->fetch() ) {
-    echo $requete['name']."<br>";
-}
-?>
-```
-### Exercice 6
-```php
-<?php
-// connexion à la base de données
-$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
-
-// selection de l'ensemble d'informations dans la base de données
 $requetes = $dbh->prepare('SELECT COUNT(*) AS age2 FROM zlitonian WHERE age > 1000');
 $requetes->execute();
 
@@ -94,7 +78,7 @@ while ($requete = $requetes->fetch() ) {
 }
 ?>
 ```
-### Exercice 7
+### Exercice 6
 ```php
 <?php
 // connexion à la base de données
@@ -110,7 +94,27 @@ while ($requete = $requetes->fetch() ) {
 }
 ?>
 ```
+### Exercice 7
+```php
+<?php
+// connexion à la base de données
+$dbh = new PDO('mysql:host=localhost;dbname=requete;port=3307', 'admin', 'admin');
+
+// selection de l'ensemble d'informations dans la base de données
+$requetes = $dbh->prepare('SELECT SUM(weight) AS weight2 FROM vache');
+$requetes->execute();
+
+// affichage de la requete
+while ($requete = $requetes->fetch() ) {
+    echo "La somme du poids de toute les vaches est de : ".$requete['weight2']."<br>";
+}
+?>
+```
 ### Exercice 8
+```php
+
+```
+### Exercice 9
 ```php
 coming soon
 ```
