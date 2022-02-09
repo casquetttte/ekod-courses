@@ -1,0 +1,14 @@
+Le dernier VidéoClub de France souhaite automatiser son système de location de vidéos VHS.  
+Ils possède plus de 3000 copies vidéo de films dont le gérant souhaite conserver la trace.
+
+Pour chaque film, il faut connaître son titre et sa catégorie, telle que science-fiction, thriller, comédie.  
+Le vidéoclub possède plusieurs copies vidéo de chaque titre de film.  
+Chaque copie a un numéro unique afin de l’identifier et le vidéoclub souhaite suivre l’état de chaque copie NEUF, BON, MOYEN ou MAUVAIS. 
+L’état change en fonction du nombre de locations effectué pour chaque copie. 
+Quelque soit la durée du film, chaque copie contient un et un seul film.
+
+Le vidéoclub a beaucoup de clients mais souhaite être sûr de louer les vidéos uniquement aux membres du vidéoclub.  
+Pour chaque membre, il faut connaître le prénom, nom, numéro de téléphone, l’adresse et le numéro d’adhérent.
+
+Les membres peuvent louer plusieurs copies de films à la date ou à des dates différents et les rendre à la même date ou à des dates différentes.  
+Le vidéoclub souhaite savoir quel membre a loué quelle copie de film
